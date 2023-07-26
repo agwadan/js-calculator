@@ -9,7 +9,6 @@ body {
   margin: 0 auto;
   padding: 10px;
   border: 1px solid black;
-  background-image: url('calculator-background.png');
 }
 
 input {
