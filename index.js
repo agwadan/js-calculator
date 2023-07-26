@@ -1,4 +1,8 @@
 
+var operator;
+var num1;
+var num2;
+
 /* Function to add */
 const add = (x, y) => {
   return x + y;
@@ -10,10 +14,35 @@ const multiply = (x, y) => {
   return x * y;
 }
 const divide = (x, y) => {
-  return x / y;
+  if (y === 0) {
+    alert("You cannot divide by zero.");
+  } else {
+    return x / y;
+  }
 }
 
-console.log(add(2, 3))
-console.log(subtract(4, 2));
-multiply(3, 2);
-console.log(divide(10, 5));
+/* Function to perform the operation */
+const operate = (operator, num1, num2) => {
+  switch (operator) {
+    case "+":
+      return add(num1, num2);
+      break;
+    
+    case "-":
+      return subtract(num1, num2);
+      break;
+  
+    case "*":
+      return multiply(num1, num2);
+      break;
+  
+    case "/":
+      return divide(num1, num2);
+      break;
+  
+    default:
+      break;
+  }
+}
+
+console.log(operate("/", 4, 0));
