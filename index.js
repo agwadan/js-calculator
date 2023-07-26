@@ -81,7 +81,7 @@ buttons.forEach(button => {
         display.value = firstNumber;
       } else {
         secondNumber += e.target.textContent;
-        display.value = `${firstNumber} ${operator} ${secondNumber}`;
+        display.value = `${firstNumber}  ${operator}  ${secondNumber}`;
       }
     } else if (e.target.className === 'op') {
       if (firstNumber && operator && secondNumber) {
